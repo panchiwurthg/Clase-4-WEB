@@ -24,9 +24,16 @@
                 100% {transform: translateY(10px);}
             }
 
+            @keyframes flote {
+                100% {transform: translateX(550px);}
+                0% {transform: translateX(0px);}
+            }
+
             polygon#iceberg { animation: flota 3s ease infinite alternate; }
 
             line#mar { animation: flota 2s ease infinite alternate; }
+
+            cosa#bote { animation: flote 5s ease infinite alternate; }
 
             h1 { font-size: calc(1rem + 3vw); line-height: 1; font-weight: 200;}
 
@@ -56,6 +63,17 @@
                 width:20%;
                 margin:0 auto;
                 animation: flota 1s ease infinite alternate;
+            }
+
+            div#bote{
+                margin-top:10vh;
+                width:100%;
+            }
+
+            div#bote img{
+                width:30%;
+                margin:0 auto;
+                animation: flote 4s ease infinite alternate;
             }
         </style>
     </head>
@@ -119,6 +137,11 @@
                     </td>
                 </tr>
             </table> 
+
+                <div id="bote">
+                    <img src="img/titanic.png" />
+                </div>
+
 
 
                 <div id="cierre">
